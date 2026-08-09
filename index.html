@@ -3,105 +3,106 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Handmade — ИП Мавлютова С.Л. | Машинная вышивка, с. Барда</title>
+<title>Handmade — ИП Мавлютова С.Л.</title>
 <style>
-  :root{
-    --emerald:#0f5a45;      /* изумрудный */
-    --emerald-dark:#0a4537;
-    --gold:#d9b44a;          /* золотой акцент */
-    --cream:#faf6ee;         /* тёплый фон */
-    --dark:#0e3a2e;
-  }
-  *{margin:0;padding:0;box-sizing:border-box;}
-  body{font-family:'Georgia','Times New Roman',serif;color:#2b2b2b;background:var(--cream);line-height:1.65;}
+:root{
+  --emerald:#0f6b51;      /* ИЗУМРУДНЫЙ (было красным #8b1a1a) */
+  --emerald-dark:#0a4a38;
+  --emerald-light:#12805e;
+  --gold:#e0c15c;          /* золотой акцент */
+  --beige:#f4ead8;         /* тёплый кремовый фон */
+  --dark:#123a2e;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Georgia',serif;background:var(--beige);color:#2b2b2b;line-height:1.55;}
 
-  /* ===== Шапка ===== */
-  header{background:linear-gradient(135deg,var(--emerald),var(--emerald-dark));color:#fff;
-    padding:30px 20px;text-align:center;border-bottom:5px solid var(--gold);}
-  header .brand{font-size:36px;letter-spacing:4px;font-weight:bold;text-transform:uppercase;}
-  header .brand span{color:var(--gold);}
-  header .sub{font-size:17px;margin-top:10px;opacity:.95;}
-  header .sub b{color:var(--gold);}
+/* ===== ШАПКА — как в красном макете, но изумрудная ===== */
+header{background:linear-gradient(135deg,var(--emerald),var(--emerald-dark));color:#fff;
+  padding:34px 20px;text-align:center;border-bottom:6px solid var(--gold);}
+header .brand{font-size:40px;font-weight:bold;letter-spacing:3px;text-transform:uppercase;}
+header .brand span{color:var(--gold);}
+header .sub{font-size:18px;margin-top:12px;color:#eaf4ef;}
+header .sub b{color:var(--gold);}
 
-  /* ===== Меню ===== */
-  nav{background:#fff;display:flex;flex-wrap:wrap;justify-content:center;gap:8px 30px;
-    padding:14px 10px;box-shadow:0 3px 10px rgba(0,0,0,.06);}
-  nav a{color:var(--emerald);text-decoration:none;font-size:16px;letter-spacing:1px;font-weight:bold;}
-  nav a:hover{color:var(--gold);text-decoration:underline;}
+/* ===== МЕНЮ ===== */
+nav{background:#fff;display:flex;flex-wrap:wrap;justify-content:center;
+  gap:10px 34px;padding:16px 10px;box-shadow:0 3px 12px rgba(0,0,0,.07);}
+nav a{color:var(--emerald);text-decoration:none;font-size:17px;letter-spacing:1px;font-weight:bold;}
+nav a:hover{color:var(--gold);}
 
-  /* ===== Герой-баннер с фото кепок ===== */
-  .hero{position:relative;padding:80px 20px;text-align:center;color:#fff;
-    background:linear-gradient(rgba(10,58,46,.80),rgba(10,58,46,.85)),
-    url('FOTO_KEPS_BACKGROUND') center/cover no-repeat;}
-  .hero h1{font-size:44px;text-shadow:2px 2px 8px rgba(0,0,0,.5);}
-  .hero h1 span{color:var(--gold);}
-  .hero p{font-size:21px;max-width:760px;margin:18px auto;}
-  .hero .cta{display:inline-block;margin-top:12px;padding:15px 38px;background:var(--gold);
-    color:#16332a;font-weight:bold;text-decoration:none;border-radius:6px;font-size:18px;
-    transition:.3s;box-shadow:0 4px 14px rgba(0,0,0,.3);}
-  .hero .cta:hover{background:#e6c95c;transform:translateY(-2px);}
+/* ===== ГЕРОЙ-БАННЕР ===== */
+.hero{position:relative;padding:85px 20px;text-align:center;color:#fff;
+  background:linear-gradient(rgba(10,62,47,.85),rgba(10,62,47,.88)),
+  url('FOTO_KEPS_BACKGROUND') center/cover no-repeat;}
+.hero h1{font-size:46px;text-shadow:2px 2px 8px rgba(0,0,0,.55);}
+.hero h1 span{color:var(--gold);}
+.hero p{font-size:21px;max-width:780px;margin:18px auto;}
+.hero .cta{display:inline-block;margin-top:14px;padding:16px 42px;background:var(--gold);
+  color:#173228;font-weight:bold;text-decoration:none;border-radius:8px;font-size:19px;
+  box-shadow:0 5px 18px rgba(0,0,0,.35);transition:.3s;}
+.hero .cta:hover{background:#eacf6b;transform:translateY(-2px);}
 
-  /* ===== О мастере ===== */
-  .master{padding:60px 20px;max-width:1000px;margin:0 auto;text-align:center;}
-  .master img{width:210px;height:210px;object-fit:cover;border-radius:50%;
-    border:5px solid var(--gold);box-shadow:0 10px 28px rgba(0,0,0,.25);}
-  .master h2{color:var(--emerald);font-size:30px;margin:22px 0 10px;}
-  .master p{max-width:660px;margin:0 auto;font-size:18px;}
+/* ===== О МАСТЕРЕ ===== */
+.master{padding:65px 20px;max-width:1000px;margin:0 auto;text-align:center;}
+.master img{width:220px;height:220px;object-fit:cover;border-radius:50%;
+  border:6px solid var(--gold);box-shadow:0 12px 30px rgba(0,0,0,.28);}
+.master h2{color:var(--emerald);font-size:32px;margin:24px 0 12px;}
+.master p{max-width:680px;margin:0 auto;font-size:18px;color:#444;}
 
-  /* ===== Галерея ===== */
-  .gallery{max-width:1120px;margin:0 auto;padding:30px 20px 70px;}
-  .gallery h2{color:var(--emerald);font-size:30px;text-align:center;margin-bottom:26px;}
-  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
-  .card{background:#fff;border-radius:12px;overflow:hidden;
-    box-shadow:0 5px 16px rgba(0,0,0,.12);border:1px solid #eee;}
-  .card img{width:100%;height:220px;object-fit:cover;display:block;}
-  .card .cap{padding:13px;text-align:center;color:var(--dark);font-weight:bold;font-size:16px;}
+/* ===== ГАЛЕРЕЯ ===== */
+.gallery{max-width:1150px;margin:0 auto;padding:35px 20px 75px;}
+.gallery h2{color:var(--emerald);font-size:32px;text-align:center;margin-bottom:28px;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px;}
+.card{background:#fff;border-radius:14px;overflow:hidden;
+  box-shadow:0 6px 18px rgba(0,0,0,.12);border:2px solid #f0e4cd;}
+.card img{width:100%;height:225px;object-fit:cover;display:block;}
+.card .cap{padding:14px;text-align:center;color:var(--dark);font-weight:bold;font-size:16px;}
 
-  /* ===== Отзывы ===== */
-  .reviews{background:var(--emerald-dark);padding:55px 20px;color:#fff;}
-  .reviews h2{color:var(--gold);font-size:30px;text-align:center;margin-bottom:26px;}
-  .rwrap{display:flex;gap:20px;overflow-x:auto;max-width:1120px;margin:0 auto;padding-bottom:12px;}
-  .rbox{min-width:290px;background:rgba(255,255,255,.08);
-    border:1px solid rgba(217,180,74,.45);border-radius:12px;padding:20px;flex-shrink:0;}
-  .rbox .nm{color:var(--gold);font-weight:bold;margin-bottom:7px;font-size:17px;}
+/* ===== ОТЗЫВЫ ===== */
+.reviews{background:var(--emerald-dark);padding:60px 20px;color:#fff;}
+.reviews h2{color:var(--gold);font-size:32px;text-align:center;margin-bottom:28px;}
+.rwrap{display:flex;gap:22px;overflow-x:auto;max-width:1150px;margin:0 auto;padding-bottom:14px;}
+.rbox{min-width:300px;background:rgba(255,255,255,.09);
+  border:2px solid rgba(224,193,92,.5);border-radius:14px;padding:22px;flex-shrink:0;}
+.rbox .nm{color:var(--gold);font-weight:bold;margin-bottom:8px;font-size:17px;}
 
-  /* ===== Цены ===== */
-  .prices{max-width:1020px;margin:0 auto;padding:55px 20px;}
-  .prices h2{color:var(--emerald);font-size:30px;text-align:center;margin-bottom:26px;}
-  table{width:100%;border-collapse:collapse;background:#fff;
-    box-shadow:0 5px 16px rgba(0,0,0,.12);border-radius:10px;overflow:hidden;}
-  th,td{padding:15px 18px;text-align:left;border-bottom:1px solid #ede6d9;}
-  th{background:var(--emerald);color:#fff;font-size:16px;}
-  tr:last-child td{border-bottom:none;}
-  .prices .note{text-align:center;margin-top:18px;font-style:italic;color:#666;}
+/* ===== ЦЕНЫ ===== */
+.prices{max-width:1050px;margin:0 auto;padding:60px 20px;}
+.prices h2{color:var(--emerald);font-size:32px;text-align:center;margin-bottom:28px;}
+table{width:100%;border-collapse:collapse;background:#fff;
+  box-shadow:0 6px 18px rgba(0,0,0,.12);border-radius:12px;overflow:hidden;border:2px solid #f0e4cd;}
+th,td{padding:16px 20px;text-align:left;border-bottom:1px solid #eee2cc;}
+th{background:var(--emerald);color:#fff;font-size:16px;}
+tr:last-child td{border-bottom:none;}
+.prices .note{text-align:center;margin-top:20px;font-style:italic;color:#6b6b6b;}
 
-  /* ===== FAQ ===== */
-  .faq{max-width:820px;margin:0 auto;padding:45px 20px 55px;}
-  .faq h2{color:var(--emerald);font-size:30px;text-align:center;margin-bottom:22px;}
-  details{background:#fff;border:1px solid #e9e2d3;border-radius:10px;margin-bottom:12px;padding:16px 20px;}
-  summary{cursor:pointer;font-weight:bold;color:var(--emerald);font-size:17px;}
-  details p{margin-top:9px;color:#555;}
+/* ===== FAQ ===== */
+.faq{max-width:840px;margin:0 auto;padding:50px 20px 60px;}
+.faq h2{color:var(--emerald);font-size:32px;text-align:center;margin-bottom:24px;}
+details{background:#fff;border:2px solid #f0e4cd;border-radius:12px;margin-bottom:14px;padding:17px 22px;}
+summary{cursor:pointer;font-weight:bold;color:var(--emerald);font-size:17px;}
+details p{margin-top:10px;color:#555;}
 
-  /* ===== Подвал ===== */
-  footer{padding:65px 20px;color:#fff;text-align:center;
-    background:linear-gradient(rgba(10,58,46,.85),rgba(10,58,46,.90)),
-    url('FOTO_KEPS_BACKGROUND') center/cover no-repeat;}
-  footer h2{color:var(--gold);font-size:32px;margin-bottom:26px;}
-  footer .row{max-width:920px;margin:0 auto;display:flex;flex-wrap:wrap;justify-content:center;gap:34px;}
-  footer .item{min-width:230px;}
-  footer .item h3{color:var(--gold);margin-bottom:9px;font-size:18px;}
-  footer a{color:#fff;text-decoration:none;}
-  footer a:hover{color:var(--gold);}
-  footer .map{margin-top:32px;}
-  footer .map iframe{width:100%;max-width:880px;height:330px;border:0;border-radius:12px;
-    box-shadow:0 6px 20px rgba(0,0,0,.4);}
-  footer .copy{margin-top:32px;color:#c9d9d1;font-size:14px;}
+/* ===== ПОДВАЛ ===== */
+footer{padding:70px 20px;color:#fff;text-align:center;
+  background:linear-gradient(rgba(10,62,47,.88),rgba(10,62,47,.92)),
+  url('FOTO_KEPS_BACKGROUND') center/cover no-repeat;}
+footer h2{color:var(--gold);font-size:34px;margin-bottom:28px;}
+footer .row{max-width:940px;margin:0 auto;display:flex;flex-wrap:wrap;justify-content:center;gap:36px;}
+footer .item{min-width:240px;}
+footer .item h3{color:var(--gold);margin-bottom:10px;font-size:19px;}
+footer a{color:#fff;text-decoration:none;}
+footer a:hover{color:var(--gold);}
+footer .map{margin-top:34px;}
+footer .map iframe{width:100%;max-width:900px;height:340px;border:0;border-radius:14px;
+  box-shadow:0 8px 24px rgba(0,0,0,.45);}
+footer .copy{margin-top:34px;color:#cfe0d8;font-size:14px;}
 
-  @media(max-width:600px){
-    header .brand{font-size:26px;}
-    .hero h1{font-size:30px;}
-    .hero p{font-size:17px;}
-  }
+@media(max-width:600px){
+  header .brand{font-size:27px;}
+  .hero h1{font-size:30px;}
+  .hero p{font-size:17px;}
+}
 </style>
 </head>
 <body>
@@ -127,15 +128,14 @@
 </section>
 
 <section class="master">
-  <img src="FOTO_SVETLANA" alt="Мастер Светлана">
+  <img src="Света на Главную.png" alt="Мастер Светлана">
   <h2>Светлана Мавлютова</h2>
   <p>Ручная и машинная вышивка на заказ. Создаю неповторимые подарки и семейные реликвии с татарскими орнаментами и именными надписями.</p>
 </section>
 
 <section class="gallery" id="gallery">
   <h2>Наши работы</h2>
-  <div class="grid">
-   <div class="card"><img src="фото 7.png" alt="Кепка Машинная вышивка"><div class="cap">Кепка «МАШИННАЯ ВЫШИВКА»</div></div>
+ <div class="card"><img src="фото 7.png" alt="Кепка Машинная вышивка"><div class="cap">Кепка «МАШИННАЯ ВЫШИВКА»</div></div>
 <div class="card"><img src="фото 14.png" alt="Кепка Машинная вышивка"><div class="cap">Кепка «МАШИННАЯ ВЫШИВКА»</div></div>
     <div class="card"><img src="фото 10.png" alt="Кепка с тюльпаном"><div class="cap">Кепка · вышивка</div></div>
     <div class="card"><img src="фото 13.png" alt="Тюбетейка"><div class="cap">Тюбетейка</div></div>
@@ -197,7 +197,7 @@
     </div>
     <div class="item">
       <h3>Соцсети</h3>
-      <p><a href="https://vk.ru/svetkachvey"_blank">Мы во ВКонтакте</a></p>
+      <p><a href="ССЫЛКА_НА_VK" target="_blank">Мы во ВКонтакте</a></p>
     </div>
   </div>
   <div class="map">
